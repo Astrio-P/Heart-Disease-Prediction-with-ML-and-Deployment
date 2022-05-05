@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body style="background-color:powderblue">
+    <h1>Heart Disease Prediction</h1>
+
+    <form action="/result" method="POST">
+
+        <label>1. Enter Age in years</label><br>
+        <input type="number" name="age" id=""> <br><br>
+        
+        <label>2. Enter your sex </label><br>
+        <select name="sex" id="">
+        <option selected>Select</option>
+        <option value="1"> Male</option>
+        <option value="0">Female </option>
+        </select><br><br>
+
+        <label> 3. Enter Chest Pain Type </label><br>
+        <select name="cp" id="">
+        <option selected>Select</option>
+        <option value="0">Typical angina</option>
+        <option value="1">Atypical angina </option>
+        <option value="2">Non-anginal pain </option>
+        <option value="3">Asymptomatic </option>
+        </select><br><br>
+
+        <label> 4. Enter Resting Blood Pressure (in mm/Hg on admission to the hospital)</label><br>
+        <input type="number" name="trestbps" id=""> <br><br>
+
+        <label> 5. Enter serum cholestoral in mg/dl</label><br>
+        <input type="number" name="chol" id=""> <br><br>
+
+        <label>6. Is fasting blood sugar level greater than 120 mg/dl? </label><br>
+        <select name="fbs" id="">
+        <option selected>Select</option>
+        <option value="1">Yes</option>
+        <option value="0">No </option>
+        </select><br><br>
+
+        <label>7. What is your resting electrocardiographic(ECG) result?</label><br>
+        <select name="restecg" id="">
+        <option selected>Select</option>
+        <option value="0">Nothing to note</option>
+        <option value="1">ST-T Wave abnormality </option>
+        <option value="2"> Possible or definite left ventricular hypertrophy </option>
+        </select><br><br>
+
+        <label> 8. Enter maximum heart rate achieved</label><br>
+        <input type="number" name="thalach" id=""> <br><br>
+
+        <label>9. Do you have exercise induced angina?</label><br>
+        <select name="exang" id="">
+        <option selected>Select</option>
+        <option value="1">Yes</option>
+        <option value="0">No </option>
+        </select><br><br>
+
+        <label> 10. Enter ST depression induced by exercise relative to rest</label><br>
+        <input type="number" step="any" name="oldpeak" id=""> <br><br>
+
+        <label>11. What is the slope of the peak exercise ST segment?</label><br>
+        <select name="slope" id="">
+        <option selected>Select</option>
+        <option value="0">Upsloping</option>
+        <option value="1">Flatsloping </option>
+        <option value="2">Downsloping</option>
+        </select><br><br>
+
+        <label>12. What is the number of major vessels (0-3) colored by flourosopy?</label><br>
+        <select name="ca" id="">
+        <option selected>Select</option>
+        <option value="0">Zero</option>
+        <option value="1">One </option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        </select><br><br>
+
+        <label>13. What is the thalium stress result?</label><br>
+        <select name="thal" id="">
+        <option selected>Select</option>
+        <option value="1">Normal 1</option>
+        <option value="2">Normal 2</option>
+        <option value="3">Normal 3</option>
+        <option value="6">Fixed Defect</option>
+        <option value="7">Reversable Defect</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
